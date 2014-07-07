@@ -1,0 +1,64 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>出错啦！</title>
+    <script src="~/Scripts/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        h2,h3{
+            font-family: 微软雅黑;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 50px">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h2>出错啦！</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    @switch ((int)ViewBag.ErrorCode)
+                    {
+                        case 101:
+                            <h3>错误的响应类型！</h3>
+                            break;
+                        case 102:
+                        <h3>错误的请求！</h3>
+                            break;
+                        case 103:
+                        <h3>应用的回调地址与请求不一致！</h3>
+                            break;
+                        case 104:
+                        <h3>未能产生合法的授权码！</h3>
+                            break;
+                        case 401:
+                        <h3>登录失败！错误的用户名和密码！</h3>
+                            break;
+                    }
+                </div>
+                <div class="panel-footer">
+                    <button id="back" class="btn btn-danger">返回上一页</button>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <script>
+        $("#back").click(function () {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

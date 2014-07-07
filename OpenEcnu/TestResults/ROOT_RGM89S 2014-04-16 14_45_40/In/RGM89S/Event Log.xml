@@ -1,0 +1,86 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1" msdata:Locale="" msprop:TimestampColumnName="DateTime" msprop:IndexColumnNames="Source,Type">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DateTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Source" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="212" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Category" type="xs:string" minOccurs="0" />
+                <xs:element name="EventID" type="xs:long" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="User" type="xs:string" minOccurs="0" />
+                <xs:element name="Computer" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table1>
+    <Type>Error</Type>
+    <DateTime>2014-04-16T14:46:09+08:00</DateTime>
+    <Source>VSTTAgentProcess</Source>
+    <Category>(0)</Category>
+    <EventID>0</EventID>
+    <Description>(QTDCAgent.exe, PID 8548, Thread 14) 未能启动网络仿真，因为未安装驱动程序。</Description>
+    <Computer>RGM89S</Computer>
+  </Table1>
+  <Table1>
+    <Type>Error</Type>
+    <DateTime>2014-04-16T14:46:09+08:00</DateTime>
+    <Source>VSTTAgentProcess</Source>
+    <Category>(0)</Category>
+    <EventID>0</EventID>
+    <Description>(QTDCAgent.exe, PID 8548, Thread 14) Data collector 'datacollector://microsoft/NetworkEmulation/1.0' logged the following error: 未能启动网络仿真，因为未安装驱动程序。</Description>
+    <Computer>RGM89S</Computer>
+  </Table1>
+  <Table1>
+    <Type>Error</Type>
+    <DateTime>2014-04-16T14:46:21+08:00</DateTime>
+    <Source>VSTTAgentProcess</Source>
+    <Category>(0)</Category>
+    <EventID>0</EventID>
+    <Description>(QTDCAgent.exe, PID 8548, Thread 13) Data collector 'datacollector://microsoft/VideoRecorder/1.0' logged the following error:
+Description:            
+Exception type:         System.BadImageFormatException
+Exception message:      Could not load file or assembly 'VSTestVideoRecorder, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 试图加载格式不正确的程序。
+Exception stack trace:     在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaFoundationRecorder.Stop()
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaFoundationRecorderAdapter.Dispose(Boolean disposeManaged)
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.EncoderPool.Release(EncoderAdapter encoder, Boolean reuseEncoder)
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.&lt;&gt;c__DisplayClasse.&lt;OnTestCaseStart&gt;b__d()
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.TryCatchAndLogError(DataCollectionContext context, Action action)</Description>
+    <Computer>RGM89S</Computer>
+  </Table1>
+  <Table1>
+    <Type>Error</Type>
+    <DateTime>2014-04-16T14:46:24+08:00</DateTime>
+    <Source>VSTTAgentProcess</Source>
+    <Category>(0)</Category>
+    <EventID>0</EventID>
+    <Description>(QTDCAgent.exe, PID 8548, Thread 15) Data collector 'datacollector://microsoft/VideoRecorder/1.0' logged the following error:
+Description:            
+Exception type:         System.InvalidOperationException
+Exception message:      对象的当前状态使该操作无效。
+Exception stack trace:     在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.EncoderPool.Release(EncoderAdapter encoder, Boolean reuseEncoder)
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.&lt;&gt;c__DisplayClass2a.&lt;OnTestCaseEnd&gt;b__28()
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.TryCatchAndLogError(DataCollectionContext context, Action action)</Description>
+    <Computer>RGM89S</Computer>
+  </Table1>
+</NewDataSet>

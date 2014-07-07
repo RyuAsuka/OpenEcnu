@@ -1,0 +1,17 @@
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\OpenEcnu.Data.Test.dll.config
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\OpenEcnu.Data.Test.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\OpenEcnu.Data.Test.pdb
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\EntityFramework.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\EntityFramework.SqlServer.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\OpenEcnu.Data.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\OpenEcnu.Data.pdb
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\EntityFramework.xml
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\EntityFramework.SqlServer.xml
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\obj\Debug\OpenEcnu.Data.Test.csprojResolveAssemblyReference.cache
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\obj\Debug\OpenEcnu.Data.Test.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\obj\Debug\OpenEcnu.Data.Test.pdb
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\log4net.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\log4net.xml
+E:\Programme\Homework\OpenEcnu\OpenEcnu.Data.Test\bin\Debug\logger.config

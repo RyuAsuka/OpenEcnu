@@ -1,0 +1,59 @@
+﻿@model OpenEcnu.UserInterface.Models.UserLoginModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="stylesheet" href="~/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Bootstrap/css/signin.css" />
+    <script type="text/javascript" src="~/Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="~/Bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                @using (Html.BeginForm("Login", "Account", new { returnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post, new Dictionary<string, object>()
+                {
+                    {"class","form-signin"},
+                    {"role","form"}
+                }))
+                {
+                    <h2 class="form-signin-heading" style="font-family:微软雅黑;">登录</h2>
+                    @Html.TextBoxFor(m => m.UserId, new Dictionary<string, object>()
+                    {
+                        {"class","form-control"},
+                        {"placeholder","用户名"}
+                    })<br />
+                    @Html.PasswordFor(m => m.Password, new Dictionary<string, object>()
+                    {
+                        {"class","form-control"},
+                        {"placeholder","密码"}
+                    })<br />
+                    @Html.CheckBoxFor(m => m.AutoLogin) <span>下次自动登录</span><br />
+                    @Html.ValidationSummary(true, "", new Dictionary<string, object>()
+                    {
+                        {"class","container"},
+                        {"style","font-family: 微软雅黑; color: red"}
+                    })
+                    <input class="btn btn-primary" type="submit" id="btnLogin" value="登录" />
+                    <input class="btn" type="button" id="btnCancel" value="取消" />
+                }
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#btnCancel").click(function () {
+            document.location.href = "/Home/Index";
+        })
+    </script>
+</body>
+</html>

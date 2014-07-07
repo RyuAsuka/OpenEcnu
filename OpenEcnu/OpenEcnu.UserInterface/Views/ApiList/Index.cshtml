@@ -1,0 +1,112 @@
+﻿
+@{
+    Layout = null;
+    string userName = ViewBag.UserName;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>API文档</title>
+    <link rel="stylesheet" href="~/Bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="~/Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="~/Bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        table tr td {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+        <!--Header Begin-->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">开放平台</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("首页", "Index", "Home")</li>
+                        <li class="active">@Html.ActionLink("API文档","Index","ApiList")</li>
+                        <li>@Html.ActionLink("应用管理", "Index", "App")</li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (ViewBag.UserName == null || string.IsNullOrEmpty(ViewBag.UserName))
+                        {
+                            <li>@Html.ActionLink("登录", "Login", "Account")</li>
+                        }
+                        else
+                        {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎，@userName<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("注销", "Logout", "Account")</li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header End-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 style="font-family: 微软雅黑;">API文档</h1>
+            <p>查阅API文档</p>
+            <a class="btn btn-primary btn-lg" href="~/Download/OpenEcnuSDK.rar">开发者SDK 下载(v1.0.0)</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" style="border-width: 1px; border-style: dashed; border-color:gray;"><a href="#OauthInterface">授权认证接口</a></div>
+            <div class="col-md-2" style="border-width: 1px; border-style: dashed; border-color:gray;"><a href="#UsersInterface">用户接口</a></div>
+            <div class="col-md-2" style="border-width: 1px; border-style: dashed; border-color:gray;">学校信息接口</div>
+            <div class="col-md-2" style="border-width: 1px; border-style: dashed; border-color:gray;">图书借阅信息接口</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="font-family: 微软雅黑;">授权认证接口</h3>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table id="OauthInterface" class="table table-bordered table-hover">
+                    <tr><td>接口</td><td>说明</td></tr>
+                    <tr><td>@Html.ActionLink("oauth/authorize","OauthAuthorize","ApiList")</td><td>换取授权码的接口</td></tr>
+                    <tr><td>@Html.ActionLink("oauth/token","OauthToken","ApiList")</td><td>换取访问令牌的接口</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="font-family: 微软雅黑;">用户接口</h3>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table id="UsersInterface" class="table table-bordered table-hover">
+                    <tr><td>接口</td><td>说明</td></tr>
+                    <tr><td>@Html.ActionLink("api/users/show","UsersShow","ApiList")</td><td>获取用户信息</td></tr>
+                </table>
+            </div>
+        </div>
+        <div id="text"><h2 style="font-family: 微软雅黑; color: #cee2c4">其他接口尚在开发中……</h2></div>
+    </div>
+</body>
+</html>

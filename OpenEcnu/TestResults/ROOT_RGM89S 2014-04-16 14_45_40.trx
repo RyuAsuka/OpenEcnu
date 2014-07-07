@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="06597d23-cce3-4a86-bbd2-cfaf0ffbee99" name="ROOT@RGM89S 2014-04-16 14:45:40" runUser="RGM89S\ROOT" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="b3426f58-0ed2-4260-9525-749e4255e285">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Execution hostProcessPlatform="MSIL">
+      <Timeouts runTimeout="1800000" testTimeout="120000" />
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution applicationBaseDirectory="E:\Programme\Homework\OpenEcnu\OpenEcnu.UserInterface.Tests">
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 9.0" MaxConnections="6">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/AspNetProfiler/1.0" assemblyQualifiedName="Microsoft.VisualStudio.PerformanceTools.DataCollection.AspNetProfileDataCollector, Microsoft.VisualStudio.PerformanceTools.DataCollection, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET 探查器">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/EventLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.EventLog.EventLogDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.EventLog, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="事件日志">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/NetworkEmulation/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.NetworkEmulation.NetworkEmulationDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.NetworkEmulation, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="网络仿真">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="系统信息">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="测试影响">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="屏幕和语音录制器">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="代码覆盖率(Visual Studio 2010)">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="ROOT_RGM89S 2014-04-16 14_45_40" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2014-04-16T14:45:40.0022167+08:00" queuing="2014-04-16T14:45:44.0994511+08:00" start="2014-04-16T14:46:19.6174826+08:00" finish="2014-04-16T14:46:34.5523368+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="RGM89S" outcome="Warning" timestamp="2014-04-16T14:45:44.0684493+08:00">
+        <Text>警告:  对测试运行忽略禁用部署，因为在活动的测试设置中启用了代码覆盖率。</Text>
+      </RunInfo>
+    </RunInfos>
+    <CollectorDataEntries>
+      <Collector agentName="RGM89S" uri="datacollector://microsoft/EventLog/1.0" collectorDisplayName="事件日志">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="RGM89S\Event Log.xml">
+            </A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+      <Collector agentName="RGM89S" uri="datacollector://microsoft/NetworkEmulation/1.0" collectorDisplayName="网络仿真">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="RGM89S\NetworkEmulation.xml">RGM89S 上的网络仿真</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+      <Collector agentName="RGM89S" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="系统信息">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="RGM89S\SystemInformation.xml">RGM89S 中的系统信息</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+    <DataCollectorMessages>
+      <DataCollectorMessage timestamp="2014-04-16T14:45:57.3402084+08:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理" agentName="RGM89S" level="Error">
+        <Text>适配器“用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理”不会用于此测试运行。  Could not load file or assembly 'Microsoft.VisualStudio.HttpProxy, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 试图加载格式不正确的程序。
+    </Text>
+      </DataCollectorMessage>
+      <DataCollectorMessage timestamp="2014-04-16T14:46:09.1078815+08:00" dataCollectorUri="datacollector://microsoft/NetworkEmulation/1.0" dataCollectorFriendlyName="网络仿真" agentName="RGM89S" level="Error">
+        <Text>未能启动网络仿真，因为未安装驱动程序。</Text>
+      </DataCollectorMessage>
+      <DataCollectorMessage timestamp="2014-04-16T14:46:20.9615595+08:00" dataCollectorUri="datacollector://microsoft/VideoRecorder/1.0" dataCollectorFriendlyName="屏幕和语音录制器" agentName="RGM89S" level="Warning">
+        <Text>计算机“RGM89S”有多个显示器。默认情况下，将仅录制主显示器中的屏幕。在此显示器中运行您的应用程序。若要了解主显示器，可使用“控制面板”中的“屏幕分辨率”小程序。</Text>
+      </DataCollectorMessage>
+    </DataCollectorMessages>
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="WebTest1" storage="e:\programme\homework\openecnu\openecnu.webtest\webtest1.webtest" id="892f592a-862f-4e12-9211-591ccd39a363" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iV2ViVGVzdDEiIElkPSI4OTJmNTkyYS04NjJmLTRlMTItOTIxMS01OTFjY2QzOWEzNjMiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSJkZWZhdWx0IiBTdG9wT25FcnJvcj0iRmFsc2UiIFJlY29yZGVkUmVzdWx0RmlsZT0iIiBSZXN1bHRzTG9jYWxlPSIiIC8+">
+      <Execution id="247220cb-270c-43d2-86d4-5e92845ccf5d" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="892f592a-862f-4e12-9211-591ccd39a363" executionId="247220cb-270c-43d2-86d4-5e92845ccf5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="247220cb-270c-43d2-86d4-5e92845ccf5d" testId="892f592a-862f-4e12-9211-591ccd39a363" testName="WebTest1" computerName="RGM89S" duration="00:00:00.1198302" startTime="2014-04-16T14:46:21.2325750+08:00" endTime="2014-04-16T14:46:24.4837609+08:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="247220cb-270c-43d2-86d4-5e92845ccf5d">
+      <ResultFiles>
+        <ResultFile path="WebTest1.webtestResult" />
+      </ResultFiles>
+      <CollectorDataEntries>
+        <Collector agentName="RGM89S" uri="datacollector://microsoft/EventLog/1.0" collectorDisplayName="事件日志">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="RGM89S\Event Log.xml">
+              </A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+      <DataCollectorMessages>
+        <DataCollectorExceptionMessage timestamp="2014-04-16T14:46:24.4367583+08:00" dataCollectorUri="datacollector://microsoft/VideoRecorder/1.0" dataCollectorFriendlyName="屏幕和语音录制器" agentName="RGM89S" level="Error">
+          <Text>对象的当前状态使该操作无效。</Text>
+          <ExceptionType>System.InvalidOperationException</ExceptionType>
+          <ExceptionMessage>对象的当前状态使该操作无效。</ExceptionMessage>
+          <StackTrace>   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.EncoderPool.Release(EncoderAdapter encoder, Boolean reuseEncoder)
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.&lt;&gt;c__DisplayClass2a.&lt;OnTestCaseEnd&gt;b__28()
+   在 Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.MediaRecorderDataAdapter.TryCatchAndLogError(DataCollectionContext context, Action action)</StackTrace>
+        </DataCollectorExceptionMessage>
+      </DataCollectorMessages>
+      <TestSettings name="本地" id="b3426f58-0ed2-4260-9525-749e4255e285">
+        <Description>这些设置为本地测试运行的默认测试设置。</Description>
+        <Execution hostProcessPlatform="MSIL">
+          <Timeouts runTimeout="1800000" testTimeout="120000" />
+          <TestTypeSpecific>
+            <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+              <AssemblyResolution applicationBaseDirectory="E:\Programme\Homework\OpenEcnu\OpenEcnu.UserInterface.Tests">
+                <TestDirectory useLoadContext="true" />
+              </AssemblyResolution>
+            </UnitTestRunConfig>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="LocalMachineDefaultRole">
+            <DataCollectors>
+              <DataCollector uri="datacollector://microsoft/AspNetProfiler/1.0" assemblyQualifiedName="Microsoft.VisualStudio.PerformanceTools.DataCollection.AspNetProfileDataCollector, Microsoft.VisualStudio.PerformanceTools.DataCollection, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET 探查器">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/EventLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.EventLog.EventLogDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.EventLog, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="事件日志">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/NetworkEmulation/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.NetworkEmulation.NetworkEmulationDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.NetworkEmulation, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="网络仿真">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="系统信息">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="测试影响">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="屏幕和语音录制器">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="代码覆盖率(Visual Studio 2010)">
+              </DataCollector>
+              <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理">
+              </DataCollector>
+            </DataCollectors>
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="ROOT_RGM89S 2014-04-16 14_45_40" />
+        <Properties />
+      </TestSettings>
+      <WebTestResultFilePath>ROOT_RGM89S 2014-04-16 14_45_40\In\247220cb-270c-43d2-86d4-5e92845ccf5d\WebTest1.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>

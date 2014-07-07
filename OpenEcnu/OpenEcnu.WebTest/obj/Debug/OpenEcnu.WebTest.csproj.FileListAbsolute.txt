@@ -1,0 +1,6 @@
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\bin\Debug\WebTest1.webtest
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\bin\Debug\OpenEcnu.WebTest.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\bin\Debug\OpenEcnu.WebTest.pdb
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\obj\Debug\OpenEcnu.WebTest.dll
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\obj\Debug\OpenEcnu.WebTest.pdb
+E:\Programme\Homework\OpenEcnu\OpenEcnu.WebTest\bin\Debug\WebTest2.webtest

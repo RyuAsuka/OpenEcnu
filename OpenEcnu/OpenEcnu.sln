@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.Data.Test", "OpenEcnu.Data.Test\OpenEcnu.Data.Test.csproj", "{E4092F12-EA43-45E4-A27B-9ABB63E84F5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{78873EB1-D4A6-447A-82F7-569E1699D26F}"
+	ProjectSection(SolutionItems) = preProject
+		Common\Moq.dll = Common\Moq.dll
+		Common\Moq.xml = Common\Moq.xml
+		Common\RandomString.dll = Common\RandomString.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.Data", "OpenEcnu.Data\OpenEcnu.Data.csproj", "{137F2AF2-6031-4823-8F29-1444AFC1B3AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.AuthorizationServer", "OpenEcnu.AuthorizationServer\OpenEcnu.AuthorizationServer.csproj", "{EA0D1C3A-44F2-4D69-927C-A681818F4D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.AuthorizationServer.Tests", "OpenEcnu.AuthorizationServer.Tests\OpenEcnu.AuthorizationServer.Tests.csproj", "{A547DEEB-C191-44A4-8471-8539B48A3DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.ResourceServer", "OpenEcnu.ResourceServer\OpenEcnu.ResourceServer.csproj", "{96EDF070-65EF-408C-B853-86B66CCF2EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.ResourceServer.Tests", "OpenEcnu.ResourceServer.Tests\OpenEcnu.ResourceServer.Tests.csproj", "{41DCA51B-2E2E-476A-A0DA-3B323AD29E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.UserInterface", "OpenEcnu.UserInterface\OpenEcnu.UserInterface.csproj", "{56B0C5F9-138E-43CF-9778-E1614554E918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEcnu.UserInterface.Tests", "OpenEcnu.UserInterface.Tests\OpenEcnu.UserInterface.Tests.csproj", "{E5B04B73-A6C9-450E-8FE6-F88FC812F586}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4092F12-EA43-45E4-A27B-9ABB63E84F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4092F12-EA43-45E4-A27B-9ABB63E84F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4092F12-EA43-45E4-A27B-9ABB63E84F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4092F12-EA43-45E4-A27B-9ABB63E84F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137F2AF2-6031-4823-8F29-1444AFC1B3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137F2AF2-6031-4823-8F29-1444AFC1B3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137F2AF2-6031-4823-8F29-1444AFC1B3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137F2AF2-6031-4823-8F29-1444AFC1B3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0D1C3A-44F2-4D69-927C-A681818F4D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0D1C3A-44F2-4D69-927C-A681818F4D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0D1C3A-44F2-4D69-927C-A681818F4D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0D1C3A-44F2-4D69-927C-A681818F4D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A547DEEB-C191-44A4-8471-8539B48A3DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A547DEEB-C191-44A4-8471-8539B48A3DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A547DEEB-C191-44A4-8471-8539B48A3DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A547DEEB-C191-44A4-8471-8539B48A3DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96EDF070-65EF-408C-B853-86B66CCF2EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96EDF070-65EF-408C-B853-86B66CCF2EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96EDF070-65EF-408C-B853-86B66CCF2EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96EDF070-65EF-408C-B853-86B66CCF2EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41DCA51B-2E2E-476A-A0DA-3B323AD29E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DCA51B-2E2E-476A-A0DA-3B323AD29E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DCA51B-2E2E-476A-A0DA-3B323AD29E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DCA51B-2E2E-476A-A0DA-3B323AD29E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B0C5F9-138E-43CF-9778-E1614554E918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B0C5F9-138E-43CF-9778-E1614554E918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B0C5F9-138E-43CF-9778-E1614554E918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B0C5F9-138E-43CF-9778-E1614554E918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B04B73-A6C9-450E-8FE6-F88FC812F586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B04B73-A6C9-450E-8FE6-F88FC812F586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B04B73-A6C9-450E-8FE6-F88FC812F586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B04B73-A6C9-450E-8FE6-F88FC812F586}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
